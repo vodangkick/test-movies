@@ -39,24 +39,24 @@ export default class MoviesList extends Component {
             currentPage: currentPage - 1
         })
     }
-    nextNumberPaging() {
-        let numberE = this.state.numberEnd;
-        let numberS = this.state.numberStart;
+    // nextNumberPaging() {
+    //     let numberE = this.state.numberEnd;
+    //     let numberS = this.state.numberStart;
 
-        numberE = numberE + 10;
-        numberS = numberS - 10;
-        this.setState({
-            numberEnd: numberE,
-            numberStart: numberS
-        })
-    }
-    prevNumberPaging() {
-        let number = this.state.numberEnd;
-        number = number - 10;
-        this.setState({
-            numberEnd: number
-        })
-    }
+    //     numberE = numberE + 10;
+    //     numberS = numberS - 10;
+    //     this.setState({
+    //         numberEnd: numberE,
+    //         numberStart: numberS
+    //     })
+    // }
+    // prevNumberPaging() {
+    //     let number = this.state.numberEnd;
+    //     number = number - 10;
+    //     this.setState({
+    //         numberEnd: number
+    //     })
+    // }
 
     /// sort
     sortFilter(event) {
