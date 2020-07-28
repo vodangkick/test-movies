@@ -17,8 +17,8 @@ export default class MoviesList extends Component {
         this.prevPaging = this.prevPaging.bind(this);
         this.sortFilter = this.sortFilter.bind(this);
         this.filterData = this.filterData.bind(this);
-        this.nextNumberPaging = this.nextNumberPaging.bind(this);
-        this.prevNumberPaging = this.prevNumberPaging.bind(this);
+        // this.nextNumberPaging = this.nextNumberPaging.bind(this);
+        // this.prevNumberPaging = this.prevNumberPaging.bind(this);
     }
     handleClick(event) {
         console.log(event.target.id);

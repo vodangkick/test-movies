@@ -5,7 +5,7 @@ import Movie from './Movie';
 import { Row } from 'react-bootstrap';
 
 function Movies(props) {
-    const { nextNumberPaging, prevNumberPaging, currentPage, handleClick,
+    const { currentPage, handleClick,
 
         nextPaging, prevPaging, sortFilter, filterData } = props;
     console.log(sortFilter);
