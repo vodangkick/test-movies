@@ -15,7 +15,7 @@ function App() {
   return (
 
     <ApolloProvider client={client}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Route path="/" exact component={MoviesList} />
         <Route path="/movie/:id" exact component={MovieDetail} />
 
