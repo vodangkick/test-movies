@@ -14,12 +14,7 @@ import { BrowserRouter as Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <>
-      <Switch>
-
-        <Route path="/" exact component={MoviesList} />
-        <Route path="/movie/:id" exact component={MovieDetail} />
-
-      </Switch>
+      test
     </>
   )
 }
