@@ -6,21 +6,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MoviesList from './pages/MoviesList';
 import MovieDetail from './pages/MovieDetail';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Switch, Route } from 'react-router-dom';
 const client = new ApolloClient({
   uri: "https://ion-movies.herokuapp.com"
 });
 
 function App() {
   return (
+    <Switch>
+      <ApolloProvider client={client}>
 
-    <ApolloProvider client={client}>
-      <Router basename={process.env.PUBLIC_URL}>
         <Route path="/" exact component={MoviesList} />
         <Route path="/movie/:id" exact component={MovieDetail} />
 
-      </Router>
-    </ApolloProvider>
+      </ApolloProvider>
+    </Switch >
   )
 }
 
