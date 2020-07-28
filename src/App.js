@@ -13,14 +13,16 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <Switch>
-      <ApolloProvider client={client}>
+    <>
+      <Switch>
+        <ApolloProvider client={client}>
 
-        <Route path="/" exact component={MoviesList} />
-        <Route path="/movie/:id" exact component={MovieDetail} />
+          <Route path="/" exact component={MoviesList} />
+          <Route path="/movie/:id" exact component={MovieDetail} />
 
-      </ApolloProvider>
-    </Switch >
+        </ApolloProvider>
+      </Switch>
+    </>
   )
 }
 
