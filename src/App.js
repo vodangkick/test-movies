@@ -17,7 +17,7 @@ function App() {
       <Switch>
         <ApolloProvider client={client}>
 
-          <Route path="/" exact component={MoviesList} />
+          <Route path={process.env.PUBLIC_URL + '/'} exact component={MoviesList} />
           <Route path="/movie/:id" exact component={MovieDetail} />
 
         </ApolloProvider>
